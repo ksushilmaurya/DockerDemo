@@ -6,7 +6,7 @@ var app 		= express();
 var mongo;
 //Define request response in root URL (/)
 app.get('/', function (req, res) {
-  res.send('Hello World!')
+  res.send('Hello World! testing')
 })
 
 app.get('/get_users', function (req, res) {
@@ -38,6 +38,12 @@ app.listen(3000, function () {
   });
 
 })
+
+//https://d1.awsstatic.com/Projects/P5505030/aws-project_Jenkins-build-server.pdf
+
+//sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkinsci.org/redhat/jenkins.repo
+
+//wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" \"http://download.oracle.com/otn-pub/java/jdk/8u60-b27/jre-8u60-linux-x64.rpm"
   
 
 
