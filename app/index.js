@@ -50,3 +50,5 @@ app.listen(3000, function () {
 
 
 
+//https://wiki.jenkins.io/display/JENKINS/Remote+access+API#RemoteaccessAPI-CSRFProtection
+
