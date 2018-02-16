@@ -6,7 +6,7 @@ var app 		= express();
 var mongo;
 //Define request response in root URL (/)
 app.get('/', function (req, res) {
-  res.send('Hello World! testing')
+  res.send('Hello World! testing trigger')
 })
 
 app.get('/get_users', function (req, res) {
@@ -45,6 +45,8 @@ app.listen(3000, function () {
 
 //wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" \"http://download.oracle.com/otn-pub/java/jdk/8u60-b27/jre-8u60-linux-x64.rpm"
   
+//   Use the following URL to trigger build remotely: JENKINS_URL/view/all/job/jenkinsDemo/build?token=TOKEN_NAME or /buildWithParameters?token=TOKEN_NAME
+// Optionally append &cause=Cause+Text to provide text that will be included in the recorded build cause.
 
 
 
